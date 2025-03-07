@@ -4,7 +4,8 @@ vim9script
 # Description: Retro groove color scheme for Vim
 # Author: morhetz <morhetz@gmail.com>
 # Source: https://github.com/morhetz/gruvbox
-# Last Modified: 12 Aug 2017
+# Last Modified: 08 Mar 2025
+# Ported By: kratuvid <ray779@tuta.io>
 # -----------------------------------------------------------------------------
 
 # Supporting code -------------------------------------------------------------

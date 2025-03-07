@@ -1,41 +1,49 @@
-" -----------------------------------------------------------------------------
-" File: gruvbox.vim
-" Description: Retro groove color scheme for Vim
-" Author: morhetz <morhetz@gmail.com>
-" Source: https://github.com/morhetz/gruvbox
-" Last Modified: 09 Apr 2014
-" -----------------------------------------------------------------------------
+vim9script
+# -----------------------------------------------------------------------------
+# File: gruvbox.vim
+# Description: Retro groove color scheme for Vim
+# Author: morhetz <morhetz@gmail.com>
+# Source: https://github.com/morhetz/gruvbox
+# Last Modified: 08 Mar 2025
+# Ported By: kratuvid <ray779@tuta.io>
+# -----------------------------------------------------------------------------
 
-function! gruvbox#invert_signs_toggle()
-  if g:gruvbox_invert_signs == 0
-    let g:gruvbox_invert_signs=1
+import '../colors/gruvbox.vim' as gruvbox_colors
+
+export def InvertSignsToggle()
+  if exists('g:gruvbox_invert_signs')
+    if g:gruvbox_invert_signs == 0
+      g:gruvbox_invert_signs = 1
+    else
+      g:gruvbox_invert_signs = 0
+    endif
   else
-    let g:gruvbox_invert_signs=0
+    g:gruvbox_invert_signs = 0
   endif
 
   colorscheme gruvbox
-endfunction
+enddef
 
-" Search Highlighting {{{
+# Search Highlighting {{{
 
-function! gruvbox#hls_show()
+export def HlsShow()
   set hlsearch
-  call GruvboxHlsShowCursor()
-endfunction
+  gruvbox_colors.GruvboxHlsShowCursor()
+enddef
 
-function! gruvbox#hls_hide()
+export def HlsHide()
   set nohlsearch
-  call GruvboxHlsHideCursor()
-endfunction
+  gruvbox_colors.GruvboxHlsHideCursor()
+enddef
 
-function! gruvbox#hls_toggle()
+export def HlsToggle()
   if &hlsearch
-    call gruvbox#hls_hide()
+    HlsHide()
   else
-    call gruvbox#hls_show()
+    HlsShow()
   endif
-endfunction
+enddef
 
-" }}}
+# }}}
 
-" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
+# vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
