@@ -85,50 +85,50 @@ const is_dark = &background == 'dark'
 var gb = {}
 
 # fill it with absolute colors
-var gb.dark0_hard  = ['#1d2021', 234]     # 29-32-33
-var gb.dark0       = ['#282828', 235]     # 40-40-40
-var gb.dark0_soft  = ['#32302f', 236]     # 50-48-47
-var gb.dark1       = ['#3c3836', 237]     # 60-56-54
-var gb.dark2       = ['#504945', 239]     # 80-73-69
-var gb.dark3       = ['#665c54', 241]     # 102-92-84
-var gb.dark4       = ['#7c6f64', 243]     # 124-111-100
-var gb.dark4_256   = ['#7c6f64', 243]     # 124-111-100
+gb.dark0_hard  = ['#1d2021', 234]     # 29-32-33
+gb.dark0       = ['#282828', 235]     # 40-40-40
+gb.dark0_soft  = ['#32302f', 236]     # 50-48-47
+gb.dark1       = ['#3c3836', 237]     # 60-56-54
+gb.dark2       = ['#504945', 239]     # 80-73-69
+gb.dark3       = ['#665c54', 241]     # 102-92-84
+gb.dark4       = ['#7c6f64', 243]     # 124-111-100
+gb.dark4_256   = ['#7c6f64', 243]     # 124-111-100
 
-var gb.gray_245    = ['#928374', 245]     # 146-131-116
-var gb.gray_244    = ['#928374', 244]     # 146-131-116
+gb.gray_245    = ['#928374', 245]     # 146-131-116
+gb.gray_244    = ['#928374', 244]     # 146-131-116
 
-var gb.light0_hard = ['#f9f5d7', 230]     # 249-245-215
-var gb.light0      = ['#fbf1c7', 229]     # 253-244-193
-var gb.light0_soft = ['#f2e5bc', 228]     # 242-229-188
-var gb.light1      = ['#ebdbb2', 223]     # 235-219-178
-var gb.light2      = ['#d5c4a1', 250]     # 213-196-161
-var gb.light3      = ['#bdae93', 248]     # 189-174-147
-var gb.light4      = ['#a89984', 246]     # 168-153-132
-var gb.light4_256  = ['#a89984', 246]     # 168-153-132
+gb.light0_hard = ['#f9f5d7', 230]     # 249-245-215
+gb.light0      = ['#fbf1c7', 229]     # 253-244-193
+gb.light0_soft = ['#f2e5bc', 228]     # 242-229-188
+gb.light1      = ['#ebdbb2', 223]     # 235-219-178
+gb.light2      = ['#d5c4a1', 250]     # 213-196-161
+gb.light3      = ['#bdae93', 248]     # 189-174-147
+gb.light4      = ['#a89984', 246]     # 168-153-132
+gb.light4_256  = ['#a89984', 246]     # 168-153-132
 
-var gb.bright_red     = ['#fb4934', 167]     # 251-73-52
-var gb.bright_green   = ['#b8bb26', 142]     # 184-187-38
-var gb.bright_yellow  = ['#fabd2f', 214]     # 250-189-47
-var gb.bright_blue    = ['#83a598', 109]     # 131-165-152
-var gb.bright_purple  = ['#d3869b', 175]     # 211-134-155
-var gb.bright_aqua    = ['#8ec07c', 108]     # 142-192-124
-var gb.bright_orange  = ['#fe8019', 208]     # 254-128-25
+gb.bright_red     = ['#fb4934', 167]     # 251-73-52
+gb.bright_green   = ['#b8bb26', 142]     # 184-187-38
+gb.bright_yellow  = ['#fabd2f', 214]     # 250-189-47
+gb.bright_blue    = ['#83a598', 109]     # 131-165-152
+gb.bright_purple  = ['#d3869b', 175]     # 211-134-155
+gb.bright_aqua    = ['#8ec07c', 108]     # 142-192-124
+gb.bright_orange  = ['#fe8019', 208]     # 254-128-25
 
-var gb.neutral_red    = ['#cc241d', 124]     # 204-36-29
-var gb.neutral_green  = ['#98971a', 106]     # 152-151-26
-var gb.neutral_yellow = ['#d79921', 172]     # 215-153-33
-var gb.neutral_blue   = ['#458588', 66]      # 69-133-136
-var gb.neutral_purple = ['#b16286', 132]     # 177-98-134
-var gb.neutral_aqua   = ['#689d6a', 72]      # 104-157-106
-var gb.neutral_orange = ['#d65d0e', 166]     # 214-93-14
+gb.neutral_red    = ['#cc241d', 124]     # 204-36-29
+gb.neutral_green  = ['#98971a', 106]     # 152-151-26
+gb.neutral_yellow = ['#d79921', 172]     # 215-153-33
+gb.neutral_blue   = ['#458588', 66]      # 69-133-136
+gb.neutral_purple = ['#b16286', 132]     # 177-98-134
+gb.neutral_aqua   = ['#689d6a', 72]      # 104-157-106
+gb.neutral_orange = ['#d65d0e', 166]     # 214-93-14
 
-var gb.faded_red      = ['#9d0006', 88]      # 157-0-6
-var gb.faded_green    = ['#79740e', 100]     # 121-116-14
-var gb.faded_yellow   = ['#b57614', 136]     # 181-118-20
-var gb.faded_blue     = ['#076678', 24]      # 7-102-120
-var gb.faded_purple   = ['#8f3f71', 96]      # 143-63-113
-var gb.faded_aqua     = ['#427b58', 66]      # 66-123-88
-var gb.faded_orange   = ['#af3a03', 130]     # 175-58-3
+gb.faded_red      = ['#9d0006', 88]      # 157-0-6
+gb.faded_green    = ['#79740e', 100]     # 121-116-14
+gb.faded_yellow   = ['#b57614', 136]     # 181-118-20
+gb.faded_blue     = ['#076678', 24]      # 7-102-120
+gb.faded_purple   = ['#8f3f71', 96]      # 143-63-113
+gb.faded_aqua     = ['#427b58', 66]      # 66-123-88
+gb.faded_orange   = ['#af3a03', 130]     # 175-58-3
 
 # }}}
 # Setup Emphasis: {{{
@@ -409,18 +409,25 @@ endif
 def HL(group: string, _fg: list<any>, ...rest: list<any>)
   # Arguments: group, guifg, guibg, gui, guisp
 
+  # echom printf("> group: %s", group)
+  # echom printf("> _fg: %s", _fg)
+  # echom printf("> rest: %s", rest)
+  # echom " "
+
   # foreground
   var fg = _fg
 
   # background
-  var bg = none
+  var bg = []
   if rest->len() >= 1
     bg = rest[0]
+  else
+    bg = none
   endif
 
   # emphasis
   var emstr = 'NONE,'
-  if rest->len() >= 2 && strlen(rest[1])
+  if rest->len() >= 2 && strlen(rest[1]) > 0
     emstr = rest[1]
   endif
 
@@ -772,7 +779,7 @@ endif
 g:niji_dark_colours = g:rbpt_colorpairs
 g:niji_light_colours = g:rbpt_colorpairs
 
-"}}}
+# }}}
 # GitGutter: {{{
 
 hi! link GitGutterAdd GruvboxGreenSign
